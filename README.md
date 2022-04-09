@@ -1,4 +1,4 @@
-# Dog Breed Classification Project
+# Dog Breed Prediction Project
 
 This is a Udacity Data Scientist Nanodegree Capstone project where we have built a dog breed classifier app in ipython notebook. We can pass an image of dog to the app and it will return the breed of the dog. The Deep Learning model distinguishes between the 133 classes of dogs with an accuracy of over 80.3828%.
 
@@ -76,7 +76,7 @@ Welsh Springer Spaniel Breed
 
 
 ## Conclusion:
-I was surprised by the good results of the algorithm i.e. Resnet50. Without doing too much fine-tuning, the algorithm was already providing high accuracy and the predictions were mostly correct. An accuracy of over 80%. For human faces it seems easier if the face has distinct features that resembles a certain dog breed. Otherwise, it starts to guess from some features, but the results vary. For higher accuracy, the parameters could be further optimized, maybe also including more layers into the model. Further, number of epochs could be increased to 40 to lower the loss. Also by providing an even bigger training data set, the classification accuracy could be improved further. Another improvement could be made with regard to UI.
+I was surprised by the good results of the algorithm i.e. Resnet50. Without doing too much fine-tuning, the algorithm was already providing high accuracy and the predictions were mostly correct. An accuracy of over 80%. For human faces it seems easier if the face has distinct features that resembles a certain dog breed. Otherwise, it starts to guess from some features, but the results vary. For higher accuracy, the parameters could be further optimized, maybe also including more layers into the model. Further, number of epochs could be increased to 40 to lower the loss. Also by providing an even bigger training data set, the classification accuracy could be improved further.
 
 ## Results:
 
