@@ -1,6 +1,20 @@
 # Dog Breed Classification Project
 
-This is a Udacity Data Scientist Nanodegree Capstone project where we have built a dog breed classifier app in ipython notebook. We can pass an image of dog to the app and it will return the breed of the dog. Also, if the uploaded image is that of a human, the algorithm tells the user what dog breed the human resembles the most. The Deep Learning model distinguishes between the 133 classes of dogs with an accuracy of over 80.3828%.
+This is a Udacity Data Scientist Nanodegree Capstone project where we have built a dog breed classifier app in ipython notebook. We can pass an image of dog to the app and it will return the breed of the dog. The Deep Learning model distinguishes between the 133 classes of dogs with an accuracy of over 80.3828%.
+
+## Project details:
+The task was to develop an algorithm that takes an image as an input, pre-processes and transforms the image so that it can be fed into a CNN for classifying the breed of the dog. If a human image is uploaded, it should still tell the user what dog breed the human resembles most.
+
+### Dataset details:
+
+The datasets are provided by Udacity i.e. dog images for training the models and human faces for detector. After loading both the dataset using sklearn, the following conclusions are drawn:
+
+1. There are 133 total dog categories.
+2. There are 8351 total dog images.
+3. There are 6680 training dog images.
+4. There are 835 validation dog images.
+5. There are 836 test dog images.
+6. The are in total 13233 human images.
 
 ## Steps Involved:
 
@@ -27,31 +41,15 @@ This is a Udacity Data Scientist Nanodegree Capstone project where we have built
 10. ipykernel
 11. tensorflow
 
-## Project motivation:
-The goal of this project is to classify images of dogs according to their breed. When the image of a human is provided, it recommends the best resembling dog breed. I decided to opt for this project as I found the topic of Deep Neural Networks to be very fascinating and wanted to dive deeper into this with some practical work.
 
 ## Description of repository:
 The repository consists of the Jupyter Notebook files from the Udacity classroom, in both formats: Dog_Breed_Predict_App.html and Dog_Breed_Predict_App.ipynb. All credits for code examples here go to Udacity.
 
 
-## Project Definition:
-The task was to develop an algorithm that takes an image as an input, pre-processes and transforms the image so that it can be fed into a CNN for classifying the breed of the dog. If a human image is uploaded, it should still tell the user what dog breed the human resembles most.
-
 ## Analysis of the Project:
 
 I decided to use a pre-trained ResNet50 model as this has shown very good results with regard to accuracy for image classification. In the provided classroom environment, my tests showed an a test accuracy of 80.3828%. This was accomplished by 25 epochs which ran very quickly on the provided GPU. Thanks to Udacity! The code in the classroom worked pretty well.
 
-
-### Dataset Exploration:
-
-The datasets are provided by Udacity i.e. dog images for training the models and human faces for detector. After loading both the dataset using sklearn, the following conclusions are drawn:
-
-1. There are 133 total dog categories.
-2. There are 8351 total dog images.
-3. There are 6680 training dog images.
-4. There are 835 validation dog images.
-5. There are 836 test dog images.
-6. The are in total 13233 human images.
 
 ### Review:
 
