@@ -7,14 +7,14 @@ The task was to develop an algorithm that takes an image as an input, pre-proces
 
 ### Dataset details:
 
-The datasets are provided by Udacity i.e. dog images for training the models and human faces for detector. After loading both the dataset using sklearn, the following conclusions are drawn:
+The datasets are provided by Udacity i.e. dog images for training the models and human faces for the detector. After loading both the dataset using sklearn, the following conclusions are drawn:
 
 1. There are 133 total dog categories.
 2. There are 8351 total dog images.
 3. There are 6680 training dog images.
 4. There are 835 validation dog images.
 5. There are 836 test dog images.
-6. The are in total 13233 human images.
+6. There are in total 13233 human images.
 
 ## Steps Involved:
 
