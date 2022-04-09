@@ -83,11 +83,14 @@ Welsh Springer Spaniel Breed
 
 I started with a relatively small dataset containing different images of dog breeds and built a CNN from scratch that had 3 convolutional layers with pooling, the accuracy on the test set was 9.0909%. Then I used pre-trained convolutional networks provided by Keras. On the test set, VGG16 gave 43.1818% and ResNet50 gave 80.3828% accuracy. The results are satisfying but I believe they can be improved further using more pre-trained models and maybe tweaking hyperparameters of currently used models.
 Before starting the project, my objective was to create a CNN with 90% testing accuracy. My final model testing accuracy was around 80%.
+
 A few possible points of improvement for our algorithm could be;
-  We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
-  We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.
-  We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.
-  We can improve the training process by improving our data set by augmentation (so our model can be robust to image scaling, translation, occlusion, etc.)
+
+  1. We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
+  2. We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.
+  3. We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.
+  4. We can improve the training process by improving our data set by augmentation (so our model can be robust to image scaling, translation, occlusion, etc.)
+
 Following the above areas, I’m confident enough that we can increase the testing accuracy of the model to above 90%.
 
 ## Results:
