@@ -2,10 +2,12 @@
 
 This is a Udacity Data Scientist Nanodegree Capstone project where we have built a dog breed classifier app in ipython notebook. We can pass an image of dog to the app and it will return the breed of the dog. The Deep Learning model distinguishes between the 133 classes of dogs with an accuracy of over 80.3828%.
 
-## Project details:
-The task was to develop an algorithm that takes an image as an input, pre-processes and transforms the image so that it can be fed into a CNN for classifying the breed of the dog. If a human image is uploaded, it should still tell the user what dog breed the human resembles most.
+Medium link - https://medium.com/@raj.vivek1223/dog-breed-classification-c35ed6856a46
 
-### Dataset details:
+## Project details:
+The task is to develop an algorithm that takes an image as an input, pre-processes, and transforms the image so that it can be fed into a CNN for classifying the breed of the dog. If a human image is uploaded, it should still tell the user what dog breed the human resembles most.
+
+## Dataset details:
 
 The datasets are provided by Udacity i.e. dog images for training the models and human faces for the detector. After loading both the dataset using sklearn, the following conclusions are drawn:
 
@@ -15,6 +17,27 @@ The datasets are provided by Udacity i.e. dog images for training the models and
 4. There are 835 validation dog images.
 5. There are 836 test dog images.
 6. There are in total 13233 human images.
+
+## Metrics
+
+This model was evaluated using metric known as accuracy. Why we choose accuracy as a mertic to evaluate is based on the fact of no class imbalance issue in the data. I have broken down the training set according to the breeds of the dog. It appears that there is no problem of class imbalance. Therefore, accuracy is utilized as the metric to evaluate the CNN model which will be trained in this exercise.
+
+## Libraries Used:
+
+1. OpenCV
+2. h5py
+3. Matplotlib
+4. Numpy
+5. Scipy
+6. tqdm
+7. Keras
+8. Scikit-learn
+9. Pillow
+10. ipykernel
+11. TensorFlow
+
+## Description of repository:
+The repository consists of the Jupyter Notebook files from the Udacity classroom, in both formats: Dog_Breed_Predict_App.html and Dog_Breed_Predict_App.ipynb. All credits for code examples here go to Udacity.
 
 ## Steps Involved:
 
@@ -26,25 +49,6 @@ The datasets are provided by Udacity i.e. dog images for training the models and
 6. Create a CNN to Classify Dog Breeds (using Transfer Learning)
 7. Write your Algorithm
 8. Test Your Algorithm
-
-## Libraries Used:
-
-1. opencv-python
-2. h5py
-3. matplotlib
-4. numpy
-5. scipy
-6. tqdm
-7. keras
-8. scikit-learn
-9. pillow
-10. ipykernel
-11. tensorflow
-
-
-## Description of repository:
-The repository consists of the Jupyter Notebook files from the Udacity classroom, in both formats: Dog_Breed_Predict_App.html and Dog_Breed_Predict_App.ipynb. All credits for code examples here go to Udacity.
-
 
 ## Analysis of the Project:
 
@@ -76,7 +80,15 @@ Welsh Springer Spaniel Breed
 
 
 ## Conclusion:
-I was surprised by the good results of the algorithm i.e. Resnet50. Without doing too much fine-tuning, the algorithm was already providing high accuracy and the predictions were mostly correct. An accuracy of over 80%. For human faces it seems easier if the face has distinct features that resembles a certain dog breed. Otherwise, it starts to guess from some features, but the results vary. For higher accuracy, the parameters could be further optimized, maybe also including more layers into the model. Further, number of epochs could be increased to 40 to lower the loss. Also by providing an even bigger training data set, the classification accuracy could be improved further.
+
+I started with a relatively small dataset containing different images of dog breeds and built a CNN from scratch that had 3 convolutional layers with pooling, the accuracy on the test set was 9.0909%. Then I used pre-trained convolutional networks provided by Keras. On the test set, VGG16 gave 43.1818% and ResNet50 gave 80.3828% accuracy. The results are satisfying but I believe they can be improved further using more pre-trained models and maybe tweaking hyperparameters of currently used models.
+Before starting the project, my objective was to create a CNN with 90% testing accuracy. My final model testing accuracy was around 80%.
+A few possible points of improvement for our algorithm could be;
+  We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
+  We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.
+  We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.
+  We can improve the training process by improving our data set by augmentation (so our model can be robust to image scaling, translation, occlusion, etc.)
+Following the above areas, I’m confident enough that we can increase the testing accuracy of the model to above 90%.
 
 ## Results:
 
