@@ -61,7 +61,7 @@ An example of human detection is provided in the following image:
 
 Human is detected in the following image.
 
-![44](https://user-images.githubusercontent.com/34116562/82108644-89e53f80-974d-11ea-9661-2dd62a57e023.png)
+![CNN1](https://user-images.githubusercontent.com/77801625/162848490-6ea01367-629b-4db6-95c6-79ca8d59c87e.png)
 
 ## Conclusion:
 
@@ -80,8 +80,17 @@ Using the final model, some examples of predictions are shown below. If a photo 
 
 #### Prediction: This photo looks like an Afghan hound.
 
-![1](https://user-images.githubusercontent.com/34116562/82108536-bc426d00-974c-11ea-9c9e-eea43de57701.png)
+![CNN2](https://user-images.githubusercontent.com/77801625/162848555-ba8f442c-d18c-432d-9b3f-57598f1a55bf.png)
 
-#### Prediction: The predicted dog breed is a Brittany.
+#### Prediction: The predicted dog breed is a Bichon frise.
 
-![2](https://user-images.githubusercontent.com/34116562/82108537-be0c3080-974c-11ea-9d92-f73a314f70f0.png)
+![CNN3](https://user-images.githubusercontent.com/77801625/162848707-2660129c-9ac8-48be-9131-5aab22889354.png)
+
+#### Prediction: The predicted dog breed is an Irish water spaniel.
+
+![CNN4](https://user-images.githubusercontent.com/77801625/162848781-5d0438c7-e7c3-45b8-a2a6-26fa4997959a.png)
+
+#### Prediction: The predicted dog breed is a Flat-coated retriever.
+
+![CNN5](https://user-images.githubusercontent.com/77801625/162848870-f33df064-1e63-4e95-8026-70de9cd38a25.png)
+
