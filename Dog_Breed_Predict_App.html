@@ -14504,7 +14504,7 @@ test_{network} = bottleneck_features['test']</code></pre>
 </code></pre>
 <p><strong>Question 5:</strong> Outline the steps you took to get to your final CNN architecture and your reasoning at each step.  Describe why you think the architecture is suitable for the current problem.</p>
 <p><strong>Answer:</strong></p>
-<p>This is looking like a vary good model because we are getting very good accuracy of 80% from 9% and 43%, but we also know that the new data is small and similar to original data. I have added a fully connected layer with 500 nodes and a ReLU activation function to detect more patterns and a Dropout to avoid overfitting.</p>
+<p>This is looking like a very good model because we are getting very good accuracy of 80% from 9% and 43%, but we also know that the new data is small and similar to original data. I have added a fully connected layer with 500 nodes and a ReLU activation function to detect more patterns and a Dropout to avoid overfitting.</p>
 
 </div>
 </div>
@@ -14880,6 +14880,12 @@ Epoch 20/20
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
 <p><strong>Answer:</strong></p>
+<p>The results are satisfying but I believe they can be improved further using more pre-trained models and maybe tweaking hyperparameters of currently used models.</p>
+<ul>
+<li>We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.</li>
+<li>We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.</li>
+<li>We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.</li>
+</ul>
 
 </div>
 </div>
