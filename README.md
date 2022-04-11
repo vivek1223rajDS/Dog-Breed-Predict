@@ -57,40 +57,21 @@ I decided to use a pre-trained ResNet50 model as this has shown very good result
 
 ### Review:
 
-1. An example of human detection is provided in the following image:
+An example of human detection is provided in the following image:
 
 Human is detected in the following image.
 
 ![44](https://user-images.githubusercontent.com/34116562/82108644-89e53f80-974d-11ea-9661-2dd62a57e023.png)
 
-
-2. Even humans will find it difficult to tell the difference between the two dog classes in some categories. An example is shown below:
-
-![Brittany_02625](https://user-images.githubusercontent.com/34116562/82108456-1db60c00-974c-11ea-89c9-c4397c8bc57b.jpg)
-
-Brittany Breed
-
-![Welsh_springer_spaniel_08203](https://user-images.githubusercontent.com/34116562/82108457-1f7fcf80-974c-11ea-9d4f-6ec00b36b05c.jpg)
-
-Welsh Springer Spaniel Breed
-
-3. Also, more distinguishing/challenging categories are shown.
-
-![final](https://user-images.githubusercontent.com/34116562/82108643-88b41280-974d-11ea-86f9-f64ee078518a.png)
-
-
 ## Conclusion:
 
 I started with a relatively small dataset containing different images of dog breeds and built a CNN from scratch that had 3 convolutional layers with pooling, the accuracy on the test set was 9.0909%. Then I used pre-trained convolutional networks provided by Keras. On the test set, VGG16 gave 43.1818% and ResNet50 gave 80.3828% accuracy. The results are satisfying but I believe they can be improved further using more pre-trained models and maybe tweaking hyperparameters of currently used models.
 Before starting the project, my objective was to create a CNN with 90% testing accuracy. My final model testing accuracy was around 80%.
-
 A few possible points of improvement for our algorithm could be;
-
-  1. We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
-  2. We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.
-  3. We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.
-  4. We can improve the training process by improving our data set by augmentation (so our model can be robust to image scaling, translation, occlusion, etc.)
-
+  We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
+  We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.
+  We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.
+  We can improve the training process by improving our data set by augmentation (so our model can be robust to image scaling, translation, occlusion, etc.)
 Following the above areas, I’m confident enough that we can increase the testing accuracy of the model to above 90%.
 
 ## Results:
@@ -104,23 +85,3 @@ Using the final model, some examples of predictions are shown below. If a photo 
 #### Prediction: The predicted dog breed is a Brittany.
 
 ![2](https://user-images.githubusercontent.com/34116562/82108537-be0c3080-974c-11ea-9d92-f73a314f70f0.png)
-
-#### Prediction: The predicted dog breed is a Boykin spaniel.
-
-![3](https://user-images.githubusercontent.com/34116562/82108538-bfd5f400-974c-11ea-9426-3437ace3342a.png)
-
-#### Prediction: The predicted dog breed is a Curly-coated retriever.
-
-![4](https://user-images.githubusercontent.com/34116562/82108540-c19fb780-974c-11ea-9a01-6ad7f33d98cc.png)
-
-#### Prediction: The predicted dog breed is a Labrador retriever.
-
-![5](https://user-images.githubusercontent.com/34116562/82108545-c5333e80-974c-11ea-9b21-8876e669061b.png)
-
-#### Prediction: The predicted dog breed is a Labrador retriever.
-
-![6](https://user-images.githubusercontent.com/34116562/82108549-c82e2f00-974c-11ea-98dc-4372bde8627d.png)
-
-#### Prediction: The predicted dog breed is a Labrador retriever.
-
-![7](https://user-images.githubusercontent.com/34116562/82108551-ca908900-974c-11ea-938f-8dfd4bb95c17.png)
