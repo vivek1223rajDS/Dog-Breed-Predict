@@ -65,12 +65,12 @@ Human is detected in the following image.
 
 ## Conclusion:
 
-I started with a relatively small dataset containing different images of dog breeds and built a CNN from scratch that had 3 convolutional layers with pooling, the accuracy on the test set was 9.0909%. Then I used pre-trained convolutional networks provided by Keras. On the test set, VGG16 gave 43.1818% and ResNet50 gave 80.3828% accuracy. The results are satisfying but I believe they can be improved further using more pre-trained models and maybe tweaking hyperparameters of currently used models.
+We started with building a CNN from scratch that had 3 convolutional layers with pooling, the accuracy on the test set was 9.0909%. Following that we used pre-trained VGG16 which gave 43.1818%, then finally we build the best model ResNet50 which gave 80.3828% accuracy. The data was relatively small containing different images of dog breeds but the results are satisfying. I believe they can be improved further using more pre-trained models and maybe tweaking hyperparameters of currently used models.
 
 A few possible points of improvement for our algorithm could be;
-  * We can try to change the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
+  * Try changing the architecture of layers, or use more fully connected layers and a deeper network, although it might not necessarily improve the results.
+  * We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results. We tried some of them and it improved the accuracy as well.
   * We can use the GridSearch function to tune the hyperparameters further and get better results. Parameters such as optimizer, loss function, activation function, epoch, etc.
-  * We can try different dropout layers and dropout rates in order to reduce overfitting and achieve more accurate testing results.
   * We can improve the training process by improving our data set by augmentation (so our model can be robust to image scaling, translation, occlusion, etc.)
 
 
